@@ -1,38 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 25 20% 8%;
+    --foreground: 120 40% 85%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 25 15% 12%;
+    --card-foreground: 120 40% 85%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 25 15% 12%;
+    --popover-foreground: 120 40% 85%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 108 76% 45%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 33 60% 35%;
+    --secondary-foreground: 0 0% 100%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 25 10% 18%;
+    --muted-foreground: 120 20% 60%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 33 60% 35%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 25 20% 20%;
+    --input: 25 20% 20%;
+    --ring: 108 76% 45%;
 
-    --radius: 0.5rem;
+    --radius: 0.2rem;
 
     --sidebar-background: 0 0% 98%;
 
@@ -97,5 +99,34 @@
 
   body {
     @apply bg-background text-foreground;
+    font-family: "Rubik", sans-serif;
+  }
+}
+
+@layer components {
+  .pixel-font {
+    font-family: "Rubik", monospace;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+  }
+
+  .minecraft-card {
+    @apply bg-card border-2 border-border shadow-lg;
+    box-shadow: 4px 4px 0px hsl(var(--border));
+  }
+
+  .minecraft-button {
+    @apply px-6 py-3 border-2 border-border font-semibold transition-all duration-150;
+    box-shadow: 2px 2px 0px hsl(var(--border));
+  }
+
+  .minecraft-button:hover {
+    transform: translate(-1px, -1px);
+    box-shadow: 3px 3px 0px hsl(var(--border));
+  }
+
+  .minecraft-button:active {
+    transform: translate(1px, 1px);
+    box-shadow: 1px 1px 0px hsl(var(--border));
   }
 }
