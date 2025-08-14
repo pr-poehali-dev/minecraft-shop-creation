@@ -81,7 +81,7 @@ const Index = () => {
               <Icon name="Server" size={24} className="text-primary" />
               <div>
                 <div className="text-sm text-muted-foreground">IP сервера:</div>
-                <div className="text-xl font-bold text-primary pixel-font">play.minecraft-server.ru</div>
+                <div className="text-xl font-bold text-primary pixel-font">81.176.176.95:25565</div>
               </div>
               <Button size="sm" variant="outline" className="minecraft-button">
                 <Icon name="Copy" size={16} className="mr-1" />
@@ -274,7 +274,7 @@ const Index = () => {
                 <CardContent className="space-y-4">
                   <div>
                     <h4 className="font-semibold">Как зайти на сервер?</h4>
-                    <p className="text-muted-foreground">IP: play.minecraft-server.ru</p>
+                    <p className="text-muted-foreground">IP: 81.176.176.95:25565</p>
                   </div>
                   <div>
                     <h4 className="font-semibold">Можно ли вернуть донат?</h4>
