@@ -59,10 +59,7 @@ const Index = () => {
               <a href="#rules" className="text-foreground hover:text-primary transition-colors font-medium">Правила</a>
               <a href="#contacts" className="text-foreground hover:text-primary transition-colors font-medium">Контакты</a>
             </nav>
-            <Button className="minecraft-button bg-primary text-primary-foreground">
-              <Icon name="User" size={16} className="mr-2" />
-              Войти
-            </Button>
+
           </div>
         </div>
       </header>
