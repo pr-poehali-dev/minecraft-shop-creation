@@ -73,9 +73,22 @@ const Index = () => {
           <h1 className="text-6xl font-bold pixel-font mb-6 text-primary">
             🏰 МАЙНКРАФТ СЕРВЕР
           </h1>
-          <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
+          <p className="text-xl text-muted-foreground mb-4 max-w-2xl mx-auto">
             Присоединяйся к лучшему серверу! Получи донатные привилегии и стань частью элитного сообщества игроков.
           </p>
+          <div className="minecraft-card inline-block px-6 py-3 mb-8 bg-card border-2 border-primary">
+            <div className="flex items-center space-x-3">
+              <Icon name="Server" size={24} className="text-primary" />
+              <div>
+                <div className="text-sm text-muted-foreground">IP сервера:</div>
+                <div className="text-xl font-bold text-primary pixel-font">play.minecraft-server.ru</div>
+              </div>
+              <Button size="sm" variant="outline" className="minecraft-button">
+                <Icon name="Copy" size={16} className="mr-1" />
+                Копировать
+              </Button>
+            </div>
+          </div>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" className="minecraft-button bg-primary text-primary-foreground text-lg">
               <Icon name="Play" size={20} className="mr-2" />
